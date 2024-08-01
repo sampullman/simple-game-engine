@@ -1,0 +1,24 @@
+{
+  "name": "simple-game-engine",
+  "version": "0.1.0",
+  "description": "A simple 2d game engine written in Typescript and targeting HTML Canvas",
+  "scripts": {
+    "build": "npm run build:lib",
+    "space": "pnpm --filter '*xenophobia' run dev",
+    "format": "prettier -w \"{**/*,*}.{ts,js,json}\"",
+    "format:check": "prettier --check \"{**/*,*}.{ts,js,json}\"",
+    "build:lib": "pnpm --filter '@sampullman/simple-game-engine' run build",
+    "build:space": "pnpm --filter 'xenophobia' run build",
+    "lint": "eslint --ext .js,.ts .",
+    "release": "cd packages/simple-game-engine && node scripts/release.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "eslint": "8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.3.3"
+  }
+}

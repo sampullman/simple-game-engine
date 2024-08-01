@@ -1,0 +1,40 @@
+{
+  "name": "@sampullman/simple-game-engine",
+  "version": "0.1.0",
+  "description": "A simple 2d game engine written in Typescript and targeting HTML Canvas",
+  "type": "module",
+  "main": "dist/simple-game-engine.es.js",
+  "module": "dist/simple-game-engine.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/simple-game-engine.es.js"
+    },
+    "./dist/*.css": {
+      "import": "./dist/*.css"
+    }
+  },
+  "types": "dist/index.d.mts.d.ts",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sampullman/simple-game-engine.git"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.40",
+    "typescript": "^5.5.4",
+    "vite": "^5.3.5",
+    "vite-plugin-dts": "^3.9.1"
+  }
+}
