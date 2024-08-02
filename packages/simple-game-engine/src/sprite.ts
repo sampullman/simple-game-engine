@@ -49,7 +49,7 @@ export function Sprite(
   }
 }
 
-interface IProxy {
+export interface IProxy {
   loaded: boolean
 }
 

@@ -21,6 +21,37 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
 
+  packages/brick-pong:
+    dependencies:
+      '@sampullman/simple-game-engine':
+        specifier: workspace:*
+        version: link:../simple-game-engine
+      vue:
+        specifier: ^3.4.31
+        version: 3.4.34(typescript@5.5.4)
+    devDependencies:
+      '@laynezh/vite-plugin-lib-assets':
+        specifier: ^0.5.23
+        version: 0.5.23(vite@5.3.5(terser@5.31.3))
+      '@rollup/plugin-terser':
+        specifier: 0.4.4
+        version: 0.4.4(rollup@4.19.1)
+      '@vitejs/plugin-vue':
+        specifier: ^5.0.5
+        version: 5.1.1(vite@5.3.5(terser@5.31.3))(vue@3.4.34(typescript@5.5.4))
+      postcss:
+        specifier: ^8.4.39
+        version: 8.4.40
+      typescript:
+        specifier: ^5.5.3
+        version: 5.5.4
+      vite:
+        specifier: ^5.3.4
+        version: 5.3.5(terser@5.31.3)
+      vite-plugin-css-injected-by-js:
+        specifier: ^3.5.1
+        version: 3.5.1(vite@5.3.5(terser@5.31.3))
+
   packages/simple-game-engine:
     dependencies:
       vue:

@@ -5,10 +5,12 @@
   "scripts": {
     "build": "npm run build:lib",
     "space": "pnpm --filter '*xenophobia' run dev",
+    "pong": "pnpm --filter '*brick-pong' run dev",
     "format": "prettier -w \"{**/*,*}.{ts,js,json}\"",
     "format:check": "prettier --check \"{**/*,*}.{ts,js,json}\"",
     "build:lib": "pnpm --filter '@sampullman/simple-game-engine' run build",
     "build:space": "pnpm --filter 'xenophobia' run build",
+    "build:pong": "pnpm --filter 'brick-pong' run build",
     "lint": "eslint --ext .js,.ts .",
     "release": "cd packages/simple-game-engine && node scripts/release.cjs"
   },

@@ -10,7 +10,7 @@ Examples are located in the [packages](./packages/) folder.
 
 #### Brick Pong
 
-A very simple Arkanoid clone.
+A very simple Arkanoid/Breakout clone.
 
 #### Xenophobia
 

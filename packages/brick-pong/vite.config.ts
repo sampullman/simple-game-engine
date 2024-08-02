@@ -7,7 +7,7 @@ import { defineConfig } from 'vite'
 
 const resolve = (p: string): string => path.resolve(__dirname, p)
 
-const outputName = 'xenophobia.es.js'
+const outputName = 'brick-pong.es.js'
 
 export default defineConfig({
   assetsInclude: /\.(pdf|jpg|png|webm|mp4|svg|wasm)$/,
@@ -30,7 +30,7 @@ export default defineConfig({
     lib: {
       formats: ['es'],
       entry: [resolve('./src/index-export.ts')],
-      name: 'xenophobia',
+      name: 'brick-pong',
       fileName: () => outputName,
     },
     rollupOptions: {

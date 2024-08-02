@@ -9,6 +9,10 @@ export interface IPosition {
   y: number
 }
 
+export interface ICircle extends IPosition {
+  radius: number
+}
+
 export interface ISized {
   width: number
   height: number
